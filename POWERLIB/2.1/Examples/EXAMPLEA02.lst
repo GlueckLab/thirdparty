@@ -1,0 +1,57 @@
+The SAS System                                 13:47 Monday, August 11, 2003   1
+
+                                        
+
+WARNING 2: B = 1, so that all tests coincide (univariate case). Since COLLAPSE =
+1, power is given as one value with the heading POWER. To print powers with a   
+heading for each test, specify OPT_OFF = {COLLAPSE}.                            
+
+                                        
+
+WARNING 10: SIGMA is a scalar. For this program, a scalar SIGMA must equal the  
+variance, NOT the standard deviation.                                           
+
+                                        
+
+POWER CALCULATION WARNING 22: Power values were rounded to 1 using the value    
+contained in ROUND and should not be be reported as Power = 1. For example, if  
+ROUND = 3 then report Power > 0.999 . This occurred 23 time(s).                 
+
+
+The results have been stored in SAS file WORK.PWRDT1
+The SAS System                                 13:47 Monday, August 11, 2003   2
+
+The CONTENTS Procedure
+
+Data Set Name: WORK.PWRDT1                            Observations:         153
+Member Type:   DATA                                   Variables:            5  
+Engine:        V8                                     Indexes:              0  
+Created:       13:47 Monday, August 11, 2003          Observation Length:   40 
+Last Modified: 13:47 Monday, August 11, 2003          Deleted Observations: 0  
+Protection:                                           Compressed:           NO 
+Data Set Type:                                        Sorted:               NO 
+Label:                                                                         
+
+
+             -----Engine/Host Dependent Information-----
+
+Data Set Page Size:         4096                                      
+Number of Data Set Pages:   2                                         
+First Data Page:            1                                         
+Max Obs per Page:           101                                       
+Obs in First Data Page:     64                                        
+Number of Data Set Repairs: 0                                         
+File Name:                  d:\apps\sas\WORK82\_TD1252\pwrdt1.sas7bdat
+Release Created:            8.0202M0                                  
+Host Created:               WIN_PRO                                   
+
+
+-----Alphabetic List of Variables and Attributes-----
+ 
+#    Variable    Type    Len    Pos
+ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+1    ALPHA       Num       8      0
+3    BETASCAL    Num       8     16
+5    POWER       Num       8     32
+2    SIGSCAL     Num       8      8
+4    TOTAL_N     Num       8     24

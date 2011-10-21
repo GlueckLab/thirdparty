@@ -1,0 +1,75 @@
+The SAS System                               10:07 Friday, February 18, 2005   1
+
+DELTA      1 row       1 col     (numeric)
+
+
+
+     0.08
+
+BETARGD      4 rows      2 cols    (numeric)
+
+
+
+      2.9       2.9
+      3.2       3.2
+     3.58      3.42
+      3.2       3.2
+
+HOLD1      8 rows      1 col     (numeric)
+
+
+
+      2.9
+      3.2
+     3.58
+      3.2
+      2.9
+      3.2
+     3.42
+      3.2
+
+HOLD2      8 rows      1 col     (numeric)
+
+
+
+        1
+        2
+        3
+        4
+        1
+        2
+        3
+        4
+
+HOLD3      8 rows      1 col     (numeric)
+
+The SAS System                               10:07 Friday, February 18, 2005   2
+
+        1
+        1
+        1
+        1
+        2
+        2
+        2
+        2
+
+HOLD      8 rows      3 cols    (numeric)
+
+
+
+      2.9         1         1
+      3.2         2         1
+     3.58         3         1
+      3.2         4         1
+      2.9         1         2
+      3.2         2         2
+     3.42         3         2
+      3.2         4         2
+
+HNAMES      1 row       3 cols    (character, size 7)
+
+
+
+SOAM1   IREGION GENDER 
+

@@ -1,0 +1,175 @@
+EXAMPLEC01.SAS--power for Time by Treatment Interaction                        1
+Compares power of tests when SIGMA most favorable to UN
+                                                   13:47 Monday, August 11, 2003
+
+                             
+
+WARNING 1: Rank(C*BETA*U) > 1, so COLLAPSE option ignored.
+
+                                        
+
+WARNING 12: For univariate repeated measures, U must be proportional to an      
+orthonormal matrix [U`U = cI] and orthogonal to a Px1 column of 1's [U`1 = 0].  
+The U matrix specified does not have theproperties.  A new U matrix with the    
+properties was created from your input and used in UNIREP calculations:         
+          U
+
+  0.7071068 0.4082483
+  -0.707107 0.4082483
+          0 -0.816497
+
+                                        
+
+POWER CALCULATION WARNING 18: The approximate expected value of estimated       
+epsilon was truncated down to 1. This occurred 20 time(s).                      
+
+EXAMPLEC01.SAS--power for Time by Treatment Interaction                        2
+Compares power of tests when SIGMA most favorable to UN
+                                                   13:47 Monday, August 11, 2003
+
+****REQUESTED PRINTED MATRICES***
+
+
+                ESSENCEX
+
+        1         0         0         0
+        0         1         0         0
+        0         0         1         0
+        0         0         0         1
+
+
+             BETA
+
+        1         0         0
+        0         0         0
+        0         0         0
+        0         0         0
+
+
+            SIGMA
+
+        1       0.4       0.4
+      0.4         1       0.4
+      0.4       0.4         1
+
+
+             RHO
+
+        1       0.4       0.4
+      0.4         1       0.4
+      0.4       0.4         1
+
+
+                   C
+
+        1        -1         0         0
+        1         0        -1         0
+        1         0         0        -1
+
+
+         U
+
+        1         1
+       -1         0
+        0        -1
+EXAMPLEC01.SAS--power for Time by Treatment Interaction                        3
+Compares power of tests when SIGMA most favorable to UN
+                                                   13:47 Monday, August 11, 2003
+
+    C * BETA * U
+
+0.7071068 0.4082483
+0.7071068 0.4082483
+0.7071068 0.4082483
+
+EXAMPLEC01.SAS--power for Time by Treatment Interaction                        4
+Compares power of tests when SIGMA most favorable to UN
+                                                   13:47 Monday, August 11, 2003
+
+****POWER CALCULATIONS****
+                          
+    SIGSCAL  BETASCAL   TOTAL_N POWER_HLT POWER_PBT
+
+          1         0        20      0.01      0.01
+          1         0        40      0.01      0.01
+          1       0.5        20     0.019      0.02
+          1       0.5        40     0.039      0.04
+          1         1        20     0.066     0.068
+          1         1        40     0.242     0.224
+          1       1.5        20     0.202      0.18
+          1       1.5        40     0.683      0.58
+          1         2        20     0.451     0.344
+          1         2        40     0.955     0.849
+          2         0        20      0.01      0.01
+
+                          
+  POWER_WLK   EPSILON  POWER_UN  EXEPS_HF UMETHOD_HF
+
+       0.01         1      0.01         1          2
+       0.01         1      0.01         1          2
+      0.021         1     0.021         1          2
+      0.041         1     0.042         1          2
+      0.075         1     0.081         1          2
+      0.247         1     0.266         1          2
+      0.218         1     0.259         1          2
+       0.66         1     0.727         1          2
+       0.45         1      0.56         1          2
+      0.929         1      0.97         1          2
+       0.01         1      0.01         1          2
+
+                          
+   POWER_HF  EXEPS_GG UMETHOD_GG  POWER_GG POWER_BOX
+
+       0.01     0.895          2     0.007     0.001
+       0.01     0.949          2     0.009     0.001
+      0.021     0.895          2     0.016     0.002
+      0.042     0.949          2     0.037     0.006
+      0.081     0.895          2     0.065     0.011
+      0.266     0.949          2     0.249     0.076
+      0.259     0.895          2     0.221      0.06
+      0.727     0.949          2     0.709     0.413
+       0.56     0.895          2     0.509     0.215
+       0.97     0.949          2     0.966     0.849
+       0.01     0.895          2     0.007     0.001
+EXAMPLEC01.SAS--power for Time by Treatment Interaction                        5
+Compares power of tests when SIGMA most favorable to UN
+                                                   13:47 Monday, August 11, 2003
+
+                          
+    SIGSCAL  BETASCAL   TOTAL_N POWER_HLT POWER_PBT
+
+          2         0        40      0.01      0.01
+          2       0.5        20     0.014     0.015
+          2       0.5        40     0.022     0.022
+          2         1        20     0.032     0.033
+          2         1        40     0.089     0.088
+          2       1.5        20     0.077     0.078
+          2       1.5        40     0.287     0.262
+          2         2        20      0.17     0.156
+          2         2        40     0.607     0.518
+
+                          
+  POWER_WLK   EPSILON  POWER_UN  EXEPS_HF UMETHOD_HF
+
+       0.01         1      0.01         1          2
+      0.015         1     0.015         1          2
+      0.023         1     0.023         1          2
+      0.035         1     0.037         1          2
+      0.094         1     0.097         1          2
+      0.087         1     0.095         1          2
+      0.291         1     0.316         1          2
+      0.186         1     0.218         1          2
+       0.59         1     0.651         1          2
+
+                          
+   POWER_HF  EXEPS_GG UMETHOD_GG  POWER_GG POWER_BOX
+
+       0.01     0.949          2     0.009     0.001
+      0.015     0.895          2     0.011     0.001
+      0.023     0.949          2      0.02     0.003
+      0.037     0.895          2     0.028     0.004
+      0.097     0.949          2     0.089     0.018
+      0.095     0.895          2     0.076     0.014
+      0.316     0.949          2     0.298     0.099
+      0.218     0.895          2     0.184     0.047
+      0.651     0.949          2     0.631     0.333

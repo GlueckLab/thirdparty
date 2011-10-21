@@ -1,0 +1,74 @@
+EXAMPLEA01.SAS--Two sample T-test              13:47 Monday, August 11, 2003   1
+
+                                        
+
+WARNING 2: B = 1, so that all tests coincide (univariate case). Since COLLAPSE =
+1, power is given as one value with the heading POWER. To print powers with a   
+heading for each test, specify OPT_OFF = {COLLAPSE}.                            
+
+                                        
+
+WARNING 10: SIGMA is a scalar. For this program, a scalar SIGMA must equal the  
+variance, NOT the standard deviation.                                           
+
+                                        
+
+POWER CALCULATION WARNING 22: Power values were rounded to 1 using the value    
+contained in ROUND and should not be be reported as Power = 1. For example, if  
+ROUND = 3 then report Power > 0.999 . This occurred 4 time(s).                  
+
+EXAMPLEA01.SAS--Two sample T-test              13:47 Monday, August 11, 2003   2
+
+****REQUESTED PRINTED MATRICES***
+
+
+      ESSENCEX
+
+        1         0
+        0         1
+
+
+   BETA
+
+        0
+        1
+
+
+  SIGMA
+
+        1
+
+
+   RHO
+
+        1
+
+
+C * BETA * U
+
+          -1
+
+EXAMPLEA01.SAS--Two sample T-test              13:47 Monday, August 11, 2003   3
+
+****POWER CALCULATIONS****
+                          
+      ALPHA   SIGSCAL  BETASCAL   TOTAL_N     POWER
+
+       0.05      0.32         0        20      0.05
+       0.05      0.32       0.5        20     0.465
+       0.05      0.32         1        20     0.962
+       0.05      0.32       1.5        20         1
+       0.05      0.32         2        20         1
+       0.05      0.32       2.5        20         1
+       0.05         1         0        20      0.05
+       0.05         1       0.5        20     0.185
+       0.05         1         1        20     0.562
+       0.05         1       1.5        20     0.887
+       0.05         1         2        20     0.988
+       0.05         1       2.5        20         1
+       0.05      2.05         0        20      0.05
+       0.05      2.05       0.5        20     0.115
+       0.05      2.05         1        20     0.315
+       0.05      2.05       1.5        20     0.601
+       0.05      2.05         2        20      0.84
+       0.05      2.05       2.5        20     0.958
