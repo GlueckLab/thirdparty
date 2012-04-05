@@ -1,9 +1,0 @@
-org.restlet.client.engine
-org.restlet.client.engine.application
-org.restlet.client.engine.http
-org.restlet.client.engine.http.adapter
-org.restlet.client.engine.http.header
-org.restlet.client.engine.io
-org.restlet.client.engine.log
-org.restlet.client.engine.resource
-org.restlet.client.engine.util
