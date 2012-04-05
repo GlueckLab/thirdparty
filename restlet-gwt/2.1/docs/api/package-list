@@ -1,0 +1,7 @@
+org.restlet.client
+org.restlet.client.data
+org.restlet.client.representation
+org.restlet.client.resource
+org.restlet.client.service
+org.restlet.client.util
+org.restlet.rebind
