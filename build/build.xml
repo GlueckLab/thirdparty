@@ -44,8 +44,8 @@ Please see the README.txt file for more details
 	</target>
 	
 	<!-- Create the binary distribution -->
-	<target name="binary-distribution">
-		<zip destfile="${basedir}/thirdparty-libraries-for-glimmpse.zip" 
+	<target name="binary-distribution" depends="setup">
+		<zip destfile="${artifacts.dir}/thirdparty-libraries-for-glimmpse.zip" 
 			basedir="${basedir}/../.."
 			excludes="thirdparty/build/**" 
 			includes="thirdparty/ApacheCommonsCodec/**,
