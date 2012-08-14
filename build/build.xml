@@ -1,0 +1,74 @@
+<!--
+ * Third party libraries required by the GLIMMPSE software system
+ * 
+ * Copyright (C) 2010 Regents of the University of Colorado.  
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ -->
+<project name="Third party libraries for GLIMMPSE" default="build-distributions">
+	
+	<!--
+	The libraries contained in this distribution are not a part of Glimmpse Software system
+ nor were they created by the authors listed in the Glimmpse source code.  In most cases,
+ the distributions were trimmed to include only the jar files directly needed to compile
+ the components of the Glimmpse software system.
+ <p></p>
+ The libraries are provided as a convenience to individuals who wish to compile the
+ Glimmpse system from source code.  A good faith effort has been made to include 
+ appropriate licensing information with each distribution.
+
+Please see the README.txt file for more details
+	-->
+    <property name="artifacts.dir" value="${basedir}/artifacts" />
+	
+	<!-- remove artifacts from previous build -->
+    <target name="clean">
+        <delete dir="${artifacts.dir}"/>
+    </target>
+	
+	<!-- create directories for new build -->
+	<target name="setup" depends="clean">
+        <mkdir dir="${artifacts.dir}"/>
+	</target>
+	
+	<!-- Create the binary distribution -->
+	<target name="binary-distribution">
+		<zip destfile="${basedir}/thirdparty-libraries-for-glimmpse.zip" 
+			basedir="${basedir}/../.."
+			excludes="thirdparty/build/**" 
+			includes="thirdparty/ApacheCommonsCodec/**,
+				thirdparty/ApacheCommonsFileUpload/**,
+				thirdparty/ApacheCommonsIO/**,
+				thirdparty/ApacheCommonsMath/**,
+				thirdparty/checkstyle/**,
+				thirdparty/gson/**,
+				thirdparty/gwt/**,
+				thirdparty/gwt-visualization/**,
+				thirdparty/jackson/**,
+				thirdparty/jfreechart/**,
+				thirdparty/JMathPlot/**,
+				thirdparty/jsc/**,
+				thirdparty/json/**,
+				thirdparty/junit/**,
+				thirdparty/log4j/**,
+				thirdparty/piriti/**,
+				thirdparty/restlet/**	"
+		/>
+	</target>
+	
+	<!-- build all distributions -->
+	<target name="build-distributions" depends="binary-distribution"/>
+	
+</project>
