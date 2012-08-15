@@ -64,7 +64,8 @@ Please see the README.txt file for more details
 				thirdparty/junit/**,
 				thirdparty/log4j/**,
 				thirdparty/piriti/**,
-				thirdparty/restlet/**	"
+				thirdparty/restlet/**,
+				thirdparty/ServletAPI/**"
 		/>
 	</target>
 	
