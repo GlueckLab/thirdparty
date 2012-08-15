@@ -17,7 +17,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  -->
-<project name="Third party libraries for GLIMMPSE" default="build-distributions">
+<project name="Third party libraries for GLIMMPSE" default="distributions">
 	
 	<!--
 	The libraries contained in this distribution are not a part of Glimmpse Software system
@@ -44,7 +44,7 @@ Please see the README.txt file for more details
 	</target>
 	
 	<!-- Create the binary distribution -->
-	<target name="binary-distribution" depends="setup">
+	<target name="distribution.binary" depends="setup">
 		<zip destfile="${artifacts.dir}/thirdparty-libraries-for-glimmpse.zip" 
 			basedir="${basedir}/../.."
 			excludes="thirdparty/build/**" 
@@ -69,6 +69,7 @@ Please see the README.txt file for more details
 	</target>
 	
 	<!-- build all distributions -->
-	<target name="build-distributions" depends="binary-distribution"/>
+	<!-- build all distributions -->
+	<target name="distributions" depends="distribution.binary"/>
 	
 </project>
